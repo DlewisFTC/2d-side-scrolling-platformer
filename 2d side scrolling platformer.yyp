@@ -36,10 +36,10 @@
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"font_opensans","path":"fonts/font_opensans/font_opensans.yy",},},
-    {"id":{"name":"counter","path":"objects/counter/counter.yy",},},
     {"id":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},},
     {"id":{"name":"obj_btn_play","path":"objects/obj_btn_play/obj_btn_play.yy",},},
     {"id":{"name":"obj_btn_story","path":"objects/obj_btn_story/obj_btn_story.yy",},},
+    {"id":{"name":"obj_hud_counter","path":"objects/obj_hud_counter/obj_hud_counter.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"object_coin","path":"objects/object_coin/object_coin.yy",},},
     {"id":{"name":"Object2","path":"objects/Object2/Object2.yy",},},

@@ -30,5 +30,5 @@ draw_set_font(font_opensans);
 /// @DnDArgument : "y" "-30"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" ""coins: ""
-/// @DnDArgument : "var" "object_coin"
-draw_text(x + 60, y + -30, string("coins: ") + string(object_coin));
+/// @DnDArgument : "var" "obj_player.coins"
+draw_text(x + 60, y + -30, string("coins: ") + string(obj_player.coins));
