@@ -35,6 +35,7 @@
     {"$GMObjectProperty":"v1","%Name":"walk_speed_powerup","filters":[],"listItems":[],"multiselect":false,"name":"walk_speed_powerup","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"walk_speed","filters":[],"listItems":[],"multiselect":false,"name":"walk_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"walk_speed_normal","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"coins","filters":[],"listItems":[],"multiselect":false,"name":"coins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"alarm","filters":[],"listItems":[],"multiselect":false,"name":"alarm","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
