@@ -2129,8 +2129,8 @@
   "maintainGms1Font":false,
   "name":"font_opensans",
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -23,7 +23,8 @@ draw_set_valign(fa_middle);
 /// @DnDHash : 2ED3FD3E
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-draw_text(x + 0, y + 0, string("Caption: ") + "");
+/// @DnDArgument : "caption" ""
+draw_text(x + 0, y + 0,  + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1
