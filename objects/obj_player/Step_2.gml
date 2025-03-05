@@ -34,9 +34,23 @@ if(move_y > 0){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "object" "Object2"
-/// @DnDSaveInfo : "object" "Object2"
-var l13B358A2_0 = instance_place(x + 0, y + 2, [Object2]);if ((l13B358A2_0 > 0)){	/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDArgument : "object" "collision_tilemap"
+var l13B358A2_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l13B358A2_0 > 0)){	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 3FB623B7
+	/// @DnDParent : 13B358A2
+	/// @DnDArgument : "var" "move_x"
+	if(move_x == 0){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
+		/// @DnDVersion : 1
+		/// @DnDHash : 2A8C6A57
+		/// @DnDParent : 3FB623B7
+		/// @DnDArgument : "imageind_relative" "1"
+		/// @DnDArgument : "spriteind" "spr_player"
+		/// @DnDSaveInfo : "spriteind" "spr_player"
+		sprite_index = spr_player;
+		image_index += 0;}
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 086475A4
 	/// @DnDParent : 13B358A2
@@ -84,19 +98,4 @@ var l13B358A2_0 = instance_place(x + 0, y + 2, [Object2]);if ((l13B358A2_0 > 0)
 		/// @DnDParent : 3357E633
 		/// @DnDArgument : "xscale" "-1 * abs(image_xscale)"
 		/// @DnDArgument : "yscale" "image_yscale"
-		image_xscale = -1 * abs(image_xscale);image_yscale = image_yscale;}
-
-	/// @DnDAction : YoYo Games.Common.If_Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 3FB623B7
-	/// @DnDParent : 13B358A2
-	/// @DnDArgument : "var" "move_x"
-	if(move_x == 0){	/// @DnDAction : YoYo Games.Instances.Set_Sprite
-		/// @DnDVersion : 1
-		/// @DnDHash : 2A8C6A57
-		/// @DnDParent : 3FB623B7
-		/// @DnDArgument : "imageind_relative" "1"
-		/// @DnDArgument : "spriteind" "spr_player"
-		/// @DnDSaveInfo : "spriteind" "spr_player"
-		sprite_index = spr_player;
-		image_index += 0;}}
+		image_xscale = -1 * abs(image_xscale);image_yscale = image_yscale;}}

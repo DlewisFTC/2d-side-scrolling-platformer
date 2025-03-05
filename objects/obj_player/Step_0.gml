@@ -1,5 +1,12 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 6A2E3027
+/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles")"
+/// @DnDArgument : "var" "collision_tilemap"
+collision_tilemap = layer_tilemap_get_id("Tiles");
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 0A64EB24
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
@@ -24,9 +31,8 @@ show_debug_message(string(move_x));
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "object" "Object2"
-/// @DnDSaveInfo : "object" "Object2"
-var l6EB179FC_0 = instance_place(x + 0, y + 2, [Object2]);if ((l6EB179FC_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "object" "collision_tilemap"
+var l6EB179FC_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l6EB179FC_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 68FE3A6F
 	/// @DnDParent : 6EB179FC
@@ -72,6 +78,5 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "walk_speed"
 /// @DnDArgument : "maxymove" "jump_speed"
-/// @DnDArgument : "object" "Object2"
-/// @DnDSaveInfo : "object" "Object2"
-move_and_collide(move_x, move_y, Object2,4,0,0,walk_speed,jump_speed);
+/// @DnDArgument : "object" "collision_tilemap"
+move_and_collide(move_x, move_y, collision_tilemap,4,0,0,walk_speed,jump_speed);
