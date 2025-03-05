@@ -44,6 +44,7 @@
     {"id":{"name":"obj_label_story","path":"objects/obj_label_story/obj_label_story.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"object_coin","path":"objects/object_coin/object_coin.yy",},},
+    {"id":{"name":"Object11","path":"objects/Object11/Object11.yy",},},
     {"id":{"name":"Object2","path":"objects/Object2/Object2.yy",},},
     {"id":{"name":"Object3","path":"objects/Object3/Object3.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
