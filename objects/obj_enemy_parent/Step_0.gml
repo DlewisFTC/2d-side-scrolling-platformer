@@ -52,6 +52,14 @@ var l6EB179FC_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l6EB17
 	/// @DnDArgument : "not" "1"
 	var l646DB6E3_0 = instance_place(x + (30 * sign(move_x)), y + 50, [collision_tilemap]);if (!(l646DB6E3_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
+		/// @DnDHash : 5532E5F4
+		/// @DnDParent : 646DB6E3
+		/// @DnDArgument : "expr" "move_x * -1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x * -1;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
 		/// @DnDHash : 30628885
 		/// @DnDParent : 646DB6E3
 		/// @DnDArgument : "expr" "-jump_speed"

@@ -44,11 +44,10 @@ var l13B358A2_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l13B35
 		/// @DnDVersion : 1
 		/// @DnDHash : 2A8C6A57
 		/// @DnDParent : 3FB623B7
-		/// @DnDArgument : "imageind_relative" "1"
 		/// @DnDArgument : "spriteind" "spr_enemy"
 		/// @DnDSaveInfo : "spriteind" "spr_enemy"
 		sprite_index = spr_enemy;
-		image_index += 0;}
+		image_index = 0;}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -65,15 +64,7 @@ var l13B358A2_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l13B35
 		/// @DnDArgument : "spriteind" "spr_enemy_walk"
 		/// @DnDSaveInfo : "spriteind" "spr_enemy_walk"
 		sprite_index = spr_enemy_walk;
-		image_index += 0;
-	
-		/// @DnDAction : YoYo Games.Instances.Sprite_Scale
-		/// @DnDVersion : 1
-		/// @DnDHash : 713AC36D
-		/// @DnDParent : 086475A4
-		/// @DnDArgument : "xscale" "1 * abs(image_xscale)"
-		/// @DnDArgument : "yscale" "image_yscale"
-		image_xscale = 1 * abs(image_xscale);image_yscale = image_yscale;}
+		image_index += 0;}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
@@ -90,12 +81,32 @@ var l13B358A2_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l13B35
 		/// @DnDArgument : "spriteind" "spr_enemy_walk"
 		/// @DnDSaveInfo : "spriteind" "spr_enemy_walk"
 		sprite_index = spr_enemy_walk;
-		image_index += 0;
-	
-		/// @DnDAction : YoYo Games.Instances.Sprite_Scale
-		/// @DnDVersion : 1
-		/// @DnDHash : 6B20D336
-		/// @DnDParent : 3357E633
-		/// @DnDArgument : "xscale" "-1 * abs(image_xscale)"
-		/// @DnDArgument : "yscale" "image_yscale"
-		image_xscale = -1 * abs(image_xscale);image_yscale = image_yscale;}}
+		image_index += 0;}}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0193A0D7
+/// @DnDArgument : "var" "move_x"
+/// @DnDArgument : "op" "3"
+/// @DnDArgument : "value" "-1"
+if(move_x <= -1){	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
+	/// @DnDVersion : 1
+	/// @DnDHash : 170F5158
+	/// @DnDParent : 0193A0D7
+	/// @DnDArgument : "xscale" "1 * abs(image_xscale)"
+	/// @DnDArgument : "yscale" "image_yscale"
+	image_xscale = 1 * abs(image_xscale);image_yscale = image_yscale;}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2FE615FE
+/// @DnDArgument : "var" "move_x"
+/// @DnDArgument : "op" "4"
+/// @DnDArgument : "value" "1"
+if(move_x >= 1){	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
+	/// @DnDVersion : 1
+	/// @DnDHash : 1D3123E6
+	/// @DnDParent : 2FE615FE
+	/// @DnDArgument : "xscale" "-1 * abs(image_xscale)"
+	/// @DnDArgument : "yscale" "image_yscale"
+	image_xscale = -1 * abs(image_xscale);image_yscale = image_yscale;}
