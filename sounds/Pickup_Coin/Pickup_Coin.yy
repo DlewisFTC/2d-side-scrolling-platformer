@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.503628,
+  "duration":0.50362813,
   "name":"Pickup_Coin",
   "parent":{
     "name":"Sounds",
